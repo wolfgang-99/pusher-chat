@@ -4,6 +4,11 @@ body{
     background-image: url("static/img/bg.jpg");
     background-size: cover;
 }
+ #carosel-laptop-view{
+    margin-bottom: 5%;
+}
+
+}
 #carouselrecent-song{
     background-color:black;
     text-align: left;
