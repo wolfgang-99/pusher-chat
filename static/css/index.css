@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding: 0;
+    background-color:black;
 }
 .navbar{
 
@@ -20,6 +21,7 @@ p{
 
 .intro-speech{
     color: white;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     text-align:center;
     padding:15% 15% 15% 15%;
@@ -27,8 +29,11 @@ p{
 }
 
 /* -------------carousel style-----------------------*/
+.carousel-container{
+    position: absolute;
+}
 #carouselrecent-song{
-    background-color:black;
+
     text-align: left;
 
     }
