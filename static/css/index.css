@@ -1,36 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background-image: url("static/img/bg.jpg");
-    background-size: cover;
 }
- #carosel-laptop-view{
-    margin-bottom: 5%;
-}
-
-}
-#carouselrecent-song{
-    background-color:black;
-    text-align: left;
-
-    }
-.carousel-caption{
-    font-family: 'MVB-SolanoGothicMVB-B', 'NotoSansCJKkr';
-    letter-spacing: -.03em;
-
-}
-
-.intro-speech{
-    color: white;
-    /*font-family: 'NotoSansCJKkr-R';
-    font-family: 'Merriweather', serif;*/
-    font-family: 'Montserrat', sans-serif;
-    /*font-family: 'Sacramento', cursive;*/
-    text-align:center;
-    padding:15%;
-    text-shadow: 2px 3px 1px rgba(46,91,173,0.6)
-}
-
 .navbar{
 
    text-align: center;
@@ -46,18 +17,39 @@ body{
 p{
     padding:0 10%;
 }
-.container{
-    padding:100px;
-}
-/* footer content */
-.footer{
-	position: relative;
-	z-index: 1100;
-	min-width: 320px;
-	height: 60px;
 
+.intro-speech{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    padding:15% 15% 15% 15%;
+    text-shadow: 2px 3px 1px rgba(46,91,173,0.6)
+}
+
+/* -------------carousel style-----------------------*/
+#carouselrecent-song{
+    background-color:black;
+    text-align: left;
+
+    }
+
+#carosel-view{
+    padding-right: 0px;
+}
+
+.carousel-caption{
+    font-family: 'MVB-SolanoGothicMVB-B', 'NotoSansCJKkr';
+    letter-spacing: -.03em;
 
 }
+.carousel-caption{
+    margin-bottom: 20%;
+    margin-right: 50%;
+
+}
+
+/* --------------------footer content -----------------------------*/
+
 
 .footer_wrap {
 
@@ -88,7 +80,7 @@ p{
     text-align: right;
     text-transform: uppercase;
 }
-
+/*---------------------google style----------------------*/
 #google_translate_element select{
  background:black;
  color:#6b6b6b;

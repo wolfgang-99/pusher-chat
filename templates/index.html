@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Admin page | BIGHIT MUSIC</title>
+    <link rel="icon" href="static/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/index.css">
     <script src="https://kit.fontawesome.com/82d3adc446.js" crossorigin="anonymous"></script>
@@ -11,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,400;1,500&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-image: url('static/img/bg.jpg')">
+<body style=" background-image: url('static/img/bg.jpg'); background-repeat:no-repeat;
+      background-size: cover; height: 100vh;">
     <section id="title">
         <nav class="navbar  navbar-light sticky-top">
             <div class="container-fluid">
@@ -27,8 +29,7 @@
 
     </section>
 
-
-     <section class="body" >
+    <section>
          <div class="container-fluid intro-speech">
 
              <P>
@@ -39,75 +40,77 @@
                  BIGHIT strives to create music heretofore unseen in the world through its inimitable way, creating the music
                  that symbolizes an era that can resonate with fans across the world.
              </p>
+             <p>Artists under the label includes Lee Hyun, BTS and TOMORROW X TOGETHER.</p>
          </div>
 
-           <div class="row carousel-container">
+        <div class="row carousel-container">
 
-             <div class="col-lg-12 col-sm-12" id="carosel-laptop-view" >
-
-               <div id="carouselrecent-song" class="carousel slide " >
-
-                  <div class="carousel-indicators" data-bs-theme="dark">
+             <div class="col-lg-12 col-md-12 col-sm-12" id="carosel-view" >
+                <div id="carouselrecent-song" class="carousel carosel-laptop-view slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselrecent-song" data-bs-slide-to="4" aria-label="Slide 5"></button>
                   </div>
-
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src={{pic1}} class="d-block w-100 img-songs" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h4><b>{{title1}}</b></h4>
+                      <img src="{{pic1}}" class="d-block w-100" alt="{{title1}}">
+                      <div class="carousel-caption  d-md-block">
+                        <h1>{{title1}}</h1>
                       </div>
                     </div>
 
                     <div class="carousel-item">
-                      <img src={{pic2}} class="d-block w-100 img-songs" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>{{title2}}</h5>
+                      <img src="{{pic2}}" class="d-block w-100" alt="{{title2}}">
+                      <div class="carousel-caption  d-md-block">
+                        <h1>{{title2}}</h1>
                       </div>
                     </div>
 
                     <div class="carousel-item">
-                      <img src={{pic3}} class="d-block w-100 img-songs" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h4>{{title3}}</h4>
+                      <img src="{{pic3}}" class="d-block w-100" alt="{{title3}}">
+                      <div class="carousel-caption  d-md-block">
+                        <h1>{{title3}}</h1>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src={{pic4}} class="d-block w-100 img-songs" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h4>{{title4}}</h4>
+                      <img src="{{pic4}}" class="d-block w-100" alt="{{title4}}">
+                      <div class="carousel-caption  d-md-block">
+                        <h1>{{title4}}</h1>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src={{pic5}} class="d-block w-100 img-songs" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h4>{{title5}}</h4>
+                      <img src="{{pic5}}" class="d-block w-100" alt="{{title5}}">
+                      <div class="carousel-caption  d-md-block">
+                        <h1>{{title5}}</h1>
                       </div>
                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselrecent-song" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselrecent-song" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselrecent-song" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselrecent-song" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
              </div>
-           </div>
+
+        </div>
+
+
 
 
       </section>
 
+
      <footer>
 
-         <div class="footer_wrap row navbar fixed-bottom">
-            <div class="footer-social  col-lg-4  col-m-12 col-sm-12 footer-col">
+         <div class="footer_wrap row navbar ">
+            <div class="footer-social  col-lg-4  col-md-12 col-sm-12 footer-col">
                 <div>
                    <a class="social-logo" href="https://www.facebook.com/BIGHIT.MUSIC"><i class=" fa-brands fa-facebook  fa-xl" ></i></a>
 
@@ -118,13 +121,13 @@
 
             </div>
 
-            <div class="familysite col-lg-4 col-m-12 col-sm-12 footer-col">
+            <div class="familysite col-lg-4 col-md-12 col-sm-12 footer-col">
                 <div class="dropup">
                   <button class="btn btn-secondary btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     family site
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item active" href="https://hybecorp.com" title="2022 Big Hit Music / HYBE : Open in a New Window">2022 Big Hit Music / HYBE.</a></li>
+                    <li><a class="dropdown-item " href="https://hybecorp.com" title="2022 Big Hit Music / HYBE : Open in a New Window">2022 Big Hit Music / HYBE.</a></li>
                       <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="https://www.bighitaudition.com/" title="Big Hit Audition : Open in a New Window">Big Hit Audition</a></li>
                       <li><hr class="dropdown-divider"></li>
@@ -137,7 +140,7 @@
 
          </div>
 
-            <div class="copyright col-lg-4 col-m-12 col-sm-12">
+            <div class="copyright col-lg-4 col-md-12 col-sm-12">
 
                 <p><a class="copyright" href="https//ibighit.com/kor/familysite/index.html">관련사이트"</a></p>
                 <p>Copyright © 2022 Big Hit Music / HYBE. <span class="nowrap">All Rights Reserved</span></p>
@@ -155,7 +158,7 @@
        function googleTranslateElementInit()
        {
        new google.translate.TranslateElement({ pageLanguage: 'und',
-       includedLanguages: 'ja,en,ko,zh-CN',
+       includedLanguages: 'ja,en,ko,zh-CN,tr',
         layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
        autoDisplay:true, multilanguage: true},
         'google_translate_element');
@@ -176,5 +179,5 @@
     </script>
     <!--End of Tawk.to Script-->
 
-</body>
+   </body>
 </html>
