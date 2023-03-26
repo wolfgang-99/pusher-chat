@@ -50,7 +50,11 @@ p{
 
 /* --------------------footer content -----------------------------*/
 
-
+footer{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
 .footer_wrap {
 
 	width: 100%;
