@@ -10,17 +10,21 @@ body{
 .navbar-brand{
     padding:8px 300px;
 }
+
 .title{
     padding:0;
     margin: 0;
 }
 
+.middlle-container{
+    text-align: center;
+}
+
 img{
 
     margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-
+    margin-right: 0;
+    margin-left: 0;
 }
 
 p{
@@ -33,7 +37,8 @@ p{
     font-family: 'Montserrat', sans-serif;
     text-align:center;
     padding:15% 15% 15% 15%;
-    text-shadow: 2px 3px 1px rgba(46,91,173,0.6)
+    text-shadow: 2px 3px 1px rgba(46,91,173,0.6);
+     width: 100%;
 }
 
 /* -------------carousel style-----------------------*/
@@ -94,6 +99,17 @@ footer{
     color: #6b6b6b;
     text-align: right;
     text-transform: uppercase;
+}
+/* -------------------media query for mobile ---------- */
+@media screen and (max-width: 1440px){
+    .middlle-container img {max-width: 100%;}
+}
+
+@media screen and (max-width: 1440px)
+.middlle-container img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
 }
 /*---------------------google style----------------------*/
 #google_translate_element select{
